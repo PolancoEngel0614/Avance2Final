@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <h1>Productos de la Tienda</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et voluptatem, deserunt cumque cupiditate, reiciendis dolorem repudiandae a commodi molestias distinctio mollitia sapiente, pariatur nisi nemo suscipit odit adipisci laboriosam omnis porro. Rem tempore, perspiciatis adipisci eveniet illum perferendis, reprehenderit possimus dignissimos blanditiis beatae vero incidunt ea sapiente. Maiores, suscipit?</p>
+    <ul>
+        {% for x in misProductos %}
+        <li>
+        CodigoProducto = models.CharField(max_length=10)
+            {{x.CodigoProducto}} {{x.DescripcionProducto}} 
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
